@@ -1,0 +1,40 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Oswald', serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: dashed 1px red;
+}
+.header__logo {
+  padding: 40px 0;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  border: dashed 1px red;
+}
+
+.header__menu_item {
+  padding: 0 13px;
+  border: dashed 1px red;
+}
+.header__menu_item:last-child {
+  padding-right: 0;
+}
+
+body {
+  margin: 0;
+}
+.wrapper {
+  margin:auto;
+  width: 80%;
+}
+
+.main-content {
+
+}
