@@ -11,12 +11,37 @@ h2 {
   border: dashed 1px red;
 }
 .header__logo {
+  position: relative;
+  font:bold 24px/31px pt_serifbold, arial,helvetica,sans-serif;
   padding: 40px 0;
+  padding-left: 44px;
+
+
 }
+.header__logo__circle {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: .7;
+}
+.header__logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+
+.header__logo__circle_color_dark-blue {
+  background: #0056EC;
+}
+
 .header__menu {
   display: flex;
   align-items: center;
-  border: dashed 1px red;
+
 }
 
 .header__menu_item {
