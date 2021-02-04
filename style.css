@@ -45,11 +45,34 @@ h2 {
 }
 
 .header__menu_item {
-  padding: 0 13px;
-  border: dashed 1px red;
+  position: relative;
+  margin-right: 26px;
+  font:500 18px/21px Roboto, arial,helvetica,sans-serif;
+  color:#000;
+  text-decoration: none;
+
 }
 .header__menu_item:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+.header__menu_item:hover {
+  opacity: .5;
+}
+
+.header__menu_item:hover:after, .header__menu_item_active:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.header__menu_item_active:after {
+  display: block;
+  position: absolute;
+  content:"";
+  left:0;
+  width: 0;
+  height: 3px;
+  transition: opacity .5s, width .5s;
+  background: #0056EC;
 }
 
 body {
